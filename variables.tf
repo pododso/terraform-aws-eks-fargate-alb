@@ -18,6 +18,11 @@ variable "oidc_thumbprint" {
   description = "OpenID Connect thumbprint of 'oidc.eks.[region].amazonaws.com'"
 }
 
+variable "alb_ingress_controller_iam_policy_arn" {
+  type = string
+  description = "ARN of the IAM Policy to be attached to the ALB Ingress Controller Role"
+}
+
 ## EKS
 
 variable "eks_version" {
