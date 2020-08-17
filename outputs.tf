@@ -13,7 +13,7 @@ output "oidc_provider_arn" {
   value       = aws_iam_openid_connect_provider.iam_oidc_provider.arn
 }
 
-output "oidc_provicer_url" {
+output "oidc_provider_url" {
   description = "OpenID Connect Provider URL of the EKS Cluster"
   value       = aws_iam_openid_connect_provider.iam_oidc_provider.url
 }
