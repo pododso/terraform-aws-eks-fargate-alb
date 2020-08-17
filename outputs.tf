@@ -8,7 +8,7 @@ output "cluster_security_group_id" {
   value       = aws_eks_cluster.eks_cluster.vpc_config.0.cluster_security_group_id
 }
 
-output "fargate_profile_iam_role_name" {
-  description = "Name of the IAM role attached to the fargate profiles"
-  value = aws_iam_role.iam_role_fargate_profile.name
+output "fargate_profile_iam_role_arn" {
+  description = "ARN of the IAM role attached to the fargate profiles"
+  value = aws_iam_role.iam_role_fargate_profile.arn
 }
